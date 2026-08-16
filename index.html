@@ -520,7 +520,12 @@ function boot() {
 
   blank();
   runCommand("whoami");
-  input.focus();
+  input.focus()
+
+  setTimeout(()=>{
+    runCommand("help")
+    input.focus()
+  } , 1000)
 }
 
 loadData();
